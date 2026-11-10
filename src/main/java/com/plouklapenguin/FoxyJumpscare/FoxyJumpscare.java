@@ -7,11 +7,9 @@ import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 
-@Mod(
-    modid = FoxyJumpscare.MODID,
-    version = Tags.VERSION,
-    name = "FoxyJumpscare",
-    acceptedMinecraftVersions = "[1.7.10]")
+@Mod(modid = FoxyJumpscare.MODID, version = Tags.VERSION, name = "FoxyJumpscare", acceptedMinecraftVersions = "[1.7.10]"
+// ,dependencies = "required-after:angelica@2.2.45"
+)
 public class FoxyJumpscare {
 
     public static final String MODID = "WitheredFoxyGTNH";
