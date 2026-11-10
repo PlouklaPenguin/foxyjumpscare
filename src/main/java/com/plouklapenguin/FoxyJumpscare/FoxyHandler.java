@@ -1,19 +1,21 @@
-package com.plouklapenguin.WitheredFoxyGTNH;
+package com.plouklapenguin.FoxyJumpscare;
 
-import cpw.mods.fml.common.eventhandler.SubscribeEvent;
-import cpw.mods.fml.common.gameevent.TickEvent;
+import java.util.Random;
+
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.audio.PositionedSoundRecord;
 import net.minecraft.client.gui.ScaledResolution;
 import net.minecraft.client.renderer.Tessellator;
 import net.minecraft.util.ResourceLocation;
+
 import org.lwjgl.opengl.GL11;
 
-import java.util.Random;
+import cpw.mods.fml.common.eventhandler.SubscribeEvent;
+import cpw.mods.fml.common.gameevent.TickEvent;
 
 public class FoxyHandler {
 
-    public static final ResourceLocation JUMPSCARE = new ResourceLocation("witheredfoxygtnh", "jumpscare");
+    public static final ResourceLocation JUMPSCARE = new ResourceLocation("foxyjumpscare", "jumpscare");
     private static final ResourceLocation[] WFOXY_FRAMES = {
         new ResourceLocation("witheredfoxygtnh", "textures/gui/wfoxy0.png"),
         new ResourceLocation("witheredfoxygtnh", "textures/gui/wfoxy1.png"),
@@ -28,7 +30,7 @@ public class FoxyHandler {
         new ResourceLocation("witheredfoxygtnh", "textures/gui/wfoxy10.png"),
         new ResourceLocation("witheredfoxygtnh", "textures/gui/wfoxy11.png"),
         new ResourceLocation("witheredfoxygtnh", "textures/gui/wfoxy12.png"),
-        new ResourceLocation("witheredfoxygtnh", "textures/gui/wfoxy13.png")};
+        new ResourceLocation("witheredfoxygtnh", "textures/gui/wfoxy13.png") };
     private static final ResourceLocation[] MANGLE_FRAMES = {
         new ResourceLocation("witheredfoxygtnh", "textures/gui/mangle0.png"),
         new ResourceLocation("witheredfoxygtnh", "textures/gui/mangle1.png"),
@@ -45,7 +47,7 @@ public class FoxyHandler {
         new ResourceLocation("witheredfoxygtnh", "textures/gui/mangle12.png"),
         new ResourceLocation("witheredfoxygtnh", "textures/gui/mangle13.png"),
         new ResourceLocation("witheredfoxygtnh", "textures/gui/mangle14.png"),
-        new ResourceLocation("witheredfoxygtnh", "textures/gui/mangle15.png")};
+        new ResourceLocation("witheredfoxygtnh", "textures/gui/mangle15.png") };
     private static final Random random = new Random();
     public static boolean isPlaying;
     public static ResourceLocation[] FRAMES;

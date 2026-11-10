@@ -1,4 +1,4 @@
-package com.plouklapenguin.WitheredFoxyGTNH;
+package com.plouklapenguin.FoxyJumpscare;
 
 import java.util.Random;
 

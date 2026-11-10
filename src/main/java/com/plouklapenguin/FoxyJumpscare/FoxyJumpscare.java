@@ -1,4 +1,4 @@
-package com.plouklapenguin.WitheredFoxyGTNH;
+package com.plouklapenguin.FoxyJumpscare;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -8,18 +8,19 @@ import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 
 @Mod(
-    modid = WitheredFoxyGTNH.MODID,
+    modid = FoxyJumpscare.MODID,
     version = Tags.VERSION,
-    name = "WitheredFoxyGTNH",
-    acceptedMinecraftVersions = "[1.7.10]")
-public class WitheredFoxyGTNH {
+    name = "FoxyJumpscare",
+    acceptedMinecraftVersions = "[1.7.10]",
+    dependencies = "required-after:gtnhlib@[0.9.41,);")
+public class FoxyJumpscare {
 
     public static final String MODID = "WitheredFoxyGTNH";
     public static final Logger LOG = LogManager.getLogger(MODID);
 
     @SidedProxy(
-        clientSide = "com.plouklapenguin.WitheredFoxyGTNH.ClientProxy",
-        serverSide = "com.plouklapenguin.WitheredFoxyGTNH.CommonProxy")
+        clientSide = "com.plouklapenguin.FoxyJumpscare.ClientProxy",
+        serverSide = "com.plouklapenguin.FoxyJumpscare.CommonProxy")
     public static CommonProxy proxy;
 
     @Mod.EventHandler
