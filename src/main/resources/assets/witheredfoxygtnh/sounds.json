@@ -1,0 +1,8 @@
+{
+  "jumpscare": {
+    "category": "master",
+    "sounds": [
+      "scare"
+    ]
+  }
+}
