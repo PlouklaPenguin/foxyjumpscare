@@ -1,5 +1,6 @@
-[
-  {
+{
+"modListVersion": 2,
+"modList": [{
     "modid": "${modId}",
     "name": "${modName}",
     "description": "Port of the WitheredFoxy Mod for 1.7.10",
@@ -13,5 +14,5 @@
     "logoFile": "",
     "screenshots": [],
     "dependencies": []
-  }
-]
+  }]
+}
