@@ -11,8 +11,7 @@ import cpw.mods.fml.common.event.FMLPreInitializationEvent;
     modid = FoxyJumpscare.MODID,
     version = Tags.VERSION,
     name = "FoxyJumpscare",
-    acceptedMinecraftVersions = "[1.7.10]",
-    dependencies = "required-after:gtnhlib@[0.9.41,);")
+    acceptedMinecraftVersions = "[1.7.10]")
 public class FoxyJumpscare {
 
     public static final String MODID = "WitheredFoxyGTNH";
